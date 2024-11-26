@@ -1,0 +1,43 @@
+h1 { 
+    color: rgb(12, 15, 189); 
+    font-family: "Dancing Script", cursive; 
+} 
+ 
+.divider { 
+    width: 100%; 
+    height: 2px; 
+    background-color: black; 
+    margin-bottom: 20px; 
+} 
+ 
+.container { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    width: 100%; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+} 
+ 
+.text-card { 
+    color: #000; 
+    font-family: "Readex Pro"; 
+    font-size: 22px; 
+    font-style: normal; 
+    font-weight: 400; 
+    line-height: 27.5px; 
+} 
+ 
+.price-card { 
+    color: #000; 
+    font-family: "Inter"; 
+    font-size: 18px; 
+    font-style: normal; 
+    font-weight: 400; 
+    line-height: 21.6px; 
+} 
+ 
+.card-img { 
+    width: 264px; 
+    height: 290px; 
+}
