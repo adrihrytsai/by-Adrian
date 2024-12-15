@@ -41,3 +41,50 @@ h1 {
     width: 264px; 
     height: 290px; 
 }
+/* Основний стиль для навігаційної панелі */
+.navbar {
+    background-color: #fefeff; /* Темно-синій фон */
+    padding: 10px 20px; /* Внутрішні відступи для елементів */
+    border-bottom: 2px solid #122694; /* Синя нижня межа */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Легка тінь */
+}
+
+/* Стиль бренда */
+.navbar-brand {
+    color: #122694; /* Світло-сірий текст */
+    font-size: 1.5rem; /* Збільшений розмір шрифту */
+    font-weight: bold; /* Жирний шрифт */
+    text-transform: uppercase; /* Усі літери великі */
+    text-decoration: none; /* Без підкреслення */
+    transition: color 0.3s ease; /* Плавний перехід кольору */
+}
+
+/* Ефект наведення для бренда */
+.navbar-brand:hover {
+    color: #3498db; /* Синій текст при наведенні */
+}
+
+/* Стиль заголовка */
+.navbar .h1 {
+    color: #ecf0f1; /* Світло-сірий текст */
+    font-size: 1.5rem; /* Розмір тексту */
+    font-weight: bold; /* Жирний стиль */
+}
+
+/* Контейнер */
+.container-fluid {
+    max-width: 1200px; /* Центрування вмісту */
+    margin: 0 auto; /* Вирівнювання по центру */
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px; /* Менші відступи для мобільних */
+    }
+
+    .navbar-brand, 
+    .navbar .h1 {
+        font-size: 1.2rem; /* Зменшення тексту на менших екранах */
+    }
+}
