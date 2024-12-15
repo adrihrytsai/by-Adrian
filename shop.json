@@ -1,0 +1,74 @@
+[ 
+    { 
+        "id": 1, 
+        "title": "СВІТШОТ OVERSIZE", 
+        "image": "img/8f1bd17213457caa28e1f97895d3eadc.jpg", 
+        "price": 1100 
+    }, 
+    { 
+        "id": 2, 
+        "title": "СПОРТИВНИЙ КОСТЮМ", 
+        "image": "img/b2c07784c01e2038b9fce43e24fb4733.jpg", 
+        "price": 1700 
+    }, 
+    { 
+        "id": 3, 
+        "title": "ФУТБОЛКА OVERSIZE", 
+        "image": "img/c356002c5ca0742a74a0732efe651080.jpg", 
+        "price": 1100 
+    }, 
+    { 
+        "id": 4, 
+        "title": "КУРТОЧКА УТЕПЛЕНА", 
+        "image": "img/889ac8dddecc84256c3617c8003ee166.jpg", 
+        "price": 2300 
+    }, 
+    { 
+        "id": 5, 
+        "title": "ШКІРЯНА КУРТКА", 
+        "image": "img/7f69f70ab6fffaa3917c5340903e321e.jpg", 
+        "price": 1500 
+    }, 
+    { 
+        "id": 6, 
+        "title": "ДЖИНСОВКА", 
+        "image": "img/b7fa60bf11b9562f8ab59d6e2a182d02.jpg", 
+        "price": 2100 
+    }, 
+    { 
+        "id": 7, 
+        "title": "СОРОЧКА КЛІТИНКА", 
+        "image": "img/f4c6c2d8c446712d82e36131b6c82e35.jpg", 
+        "price": 2400 
+    }, 
+    { 
+        "id": 8, 
+        "title": "ДЖИНСИ WIDE LEG", 
+        "image": "img/52c5be562d08c79d0ef06b1f282fd215.jpg", 
+        "price": 1900 
+    }, 
+    { 
+        "id": 9, 
+        "title": "ДЖИНСИ WIDE LEG", 
+        "image": "img/57d288361e1635cbd99257beccf94549.jpg", 
+        "price": 1700 
+    }, 
+    { 
+        "id": 10, 
+        "title": "ДЖИНСИ STRAIGHT", 
+        "image": "img/4b211628833c92f73f6b212efbe37efe.jpg", 
+        "price": 2100 
+    }, 
+    { 
+        "id": 11, 
+        "title": "ДЖИНСИ MOM", 
+        "image": "image.png", 
+        "price": 2300 
+    }, 
+    { 
+        "id": 12, 
+        "title": "ФУТБОЛКА OVERSIZE", 
+        "image": "img/100fbeb7d1a35e4d5e8547d32f109eb8.jpg", 
+        "price": 2200 
+    } 
+]
