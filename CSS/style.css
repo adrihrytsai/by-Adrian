@@ -2,16 +2,6 @@ h1 {
     color: rgb(12, 15, 189);   
     font-family: "Dancing Script", cursive; 
 }
-
-.container {  
-    display: flex;  
-    flex-wrap: wrap;  
-    gap: 20px;  
-    width: 100%;  
-    justify-content: space-between;  
-    align-items: flex-start;  
-}  
-  
 .text-card {  
     color: #000;  
     font-family: "Readex Pro";  
@@ -38,5 +28,5 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: center;
+    justify-content: space-between;
 }

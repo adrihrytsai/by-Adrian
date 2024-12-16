@@ -104,7 +104,7 @@ function getCartItem(product){
          <div class="card my-2">
                 <div class="row m-2 ">
                     <div class="col-2">
-                        <img src="img/${product.image}" class="img-fluid">
+                        <img src="${product.image}" class="img-fluid">
                     </div>
                     <div class="col-6">
                         <h5>${product.title}</h5>
