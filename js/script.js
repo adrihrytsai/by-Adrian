@@ -24,9 +24,9 @@ function getCookieValue(cookieName) {
 
 let products_list = document.querySelector(".products-list")
 
-function getCard(product){
+function getCard(product) {
     let imagePath = product.image.startsWith('img/') ? product.image : `img/${product.image}`;
-    return  `
+    return `
          <div class="card" style="width: 20rem;">
             <img src="${imagePath}" class="card-img-top" alt="...">
             <div class="card-body">
@@ -41,8 +41,8 @@ function getCard(product){
 
 
 
-class ShoppingCart{
-    constructor(){
+class ShoppingCart {
+    constructor() {
         this.items = {}
         this.loadCartFromCookies()
     }
@@ -61,10 +61,10 @@ class ShoppingCart{
         }
     }
 
-    addItem(product){
-        if (this.items[product.id] ){
+    addItem(product) {
+        if (this.items[product.id]) {
             this.items[product.id].quantity += 1
-        }else{
+        } else {
             this.items[product.id] = product
             this.items[product.id].quantity = 1
         }
@@ -72,9 +72,9 @@ class ShoppingCart{
     }
 }
 
-let cart = new ShoppingCart() 
+let cart = new ShoppingCart()
 
-function addToCard(event){
+function addToCard(event) {
     let data = event.target.getAttribute('data-product')
     let product = JSON.parse(data)
     cart.addItem(product)
@@ -82,25 +82,25 @@ function addToCard(event){
     console.log(cart.items)
 }
 
-getProducts().then(function(products){
+getProducts().then(function (products) {
 
-    if (products_list){
-        products.forEach(function(product){
-            products_list.innerHTML+= getCard(product)
+    if (products_list) {
+        products.forEach(function (product) {
+            products_list.innerHTML += getCard(product)
         })
         let addBtn_list = document.querySelectorAll(".add-cart-btn")
-        addBtn_list.forEach(function(btn){
+        addBtn_list.forEach(function (btn) {
             btn.addEventListener("click", addToCard)
         })
     }
-    
+
 })
 
 // Додавання товарів кошика на сторінку
 
 
-function getCartItem(product){
-    return  `
+function getCartItem(product) {
+    return `
          <div class="card my-2">
                 <div class="row m-2 ">
                     <div class="col-2">
@@ -119,8 +119,41 @@ function getCartItem(product){
 }
 
 let cart_list = document.querySelector(".сart-list")
-cart_list.innerHTML =''
 
-for (let key in cart.items){
-    cart_list.innerHTML+= getCartItem(cart.items[key])
+if (cart_list) {
+    let cart_block = document.querySelector("#cart")
+    let empty_block = document.querySelector("#empty-cart")
+
+    if (Object.keys(cart.items).length > 0) {
+
+        empty_block.classList.add("d-none")
+        cart_block.classList.remove("d-none")
+        cart_list.innerHTML = ''
+
+
+        for (let key in cart.items) {
+            cart_list.innerHTML += getCartItem(cart.items[key])
+        }
+    }
 }
+let searchForm = document.querySelector("#searchForm")
+searchForm.querySelector("input").addEventListener("input", function (e) {
+    e.preventDefault()
+    let query = searchForm.querySelector("input").value.trim().toLowerCase();
+    products_list.innerHTML = ""
+    getProducts().then(function (products) {
+
+        if (products_list) {
+            products.forEach(function (product) {
+                if (product.title.toLowerCase().includes(query)) {
+                    products_list.innerHTML += getCard(product)
+                }
+            })
+            let addBtn_list = document.querySelectorAll(".add-cart-btn")
+            addBtn_list.forEach(function (btn) {
+                btn.addEventListener("click", addToCard)
+            })
+        }
+
+    })
+})

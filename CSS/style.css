@@ -30,3 +30,7 @@ h1 {
     gap: 10px;
     justify-content: space-between;
 }
+
+.card{
+    transition: 0.5s linear;
+}
